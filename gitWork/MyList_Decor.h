@@ -24,9 +24,9 @@ public:
 
 		return in;
 	}
-	int countOf (T val) {
+	int countOf(T val, int start_index = 1, int end_index = 3) {
 		int count = 0;
-		for (auto i : this->getList())
+		for (int i = start_index; i < end_index; i++)
 		{
 			if (val == i)
 			{
@@ -35,6 +35,7 @@ public:
 		}
 		return count;
 	}
+	
 	~MyList_Decor(){}
 };
 
