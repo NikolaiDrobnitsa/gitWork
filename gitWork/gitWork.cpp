@@ -32,4 +32,5 @@ int main()
 	std::cout << ml.sum(1) << "\n";
 	std::cout << ml.isHasOdd() << "\n";
 	std::cout << ml.countOf(1) << "\n";
+	std::cout << ml.multi() << "\n";
 }

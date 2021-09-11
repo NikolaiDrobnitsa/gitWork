@@ -30,7 +30,9 @@ public:
 	T sum(int start_index = 0){
 		return std::accumulate(this->list.begin(), this->list.end(), start_index);
 	}
-
+	T multi() {
+		return std::accumulate(this->list.begin(), this->list.end(), 1, std::multiplies<int>());
+	}
 	bool isHasOdd() {
 		bool isOdd = false;
 		for (auto i : this->getList()) {
